@@ -1,7 +1,16 @@
-import React from "react"
+import React from 'react'
+import { Link } from 'gatsby'
 
-// import { Container } from './styles';
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 
-export default function AboutPage() {
-  return <h1>About Page</h1>
+const AboutPage = () => {
+  return (
+    <Layout>
+      <SEO title="About" />
+      <h1>About</h1>
+    </Layout>
+  )
 }
+
+export default AboutPage
