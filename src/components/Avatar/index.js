@@ -6,10 +6,10 @@ const Avatar = () => {
   const { avatarImage } = useStaticQuery(
     graphql`
       query {
-        avatarImage: file(relativePath: { eq: "profile-photo.png" }) {
+        avatarImage: file(relativePath: { eq: "kratos-profile.jpg" }) {
           childImageSharp {
-            fixed(width: 60, height: 60) {
-              ...GatsbyImageSharpFixed
+            fixed(width: 125, height: 125) {
+              ...GatsbyImageSharpFixed_tracedSVG
             }
           }
         }
@@ -17,7 +17,13 @@ const Avatar = () => {
     `
   )
 
-  return <Img fixed={avatarImage.childImageSharp.fixed} />
+  return (
+    <Img
+      fixed={avatarImage.childImageSharp.fixed}
+      fadeIn={true}
+      durationFadeIn={'1000'}
+    />
+  )
 }
 
 export default Avatar
