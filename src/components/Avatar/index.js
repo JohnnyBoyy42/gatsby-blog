@@ -8,7 +8,7 @@ const Avatar = () => {
       query {
         avatarImage: file(relativePath: { eq: "kratos-profile.jpg" }) {
           childImageSharp {
-            fixed(width: 125, height: 125) {
+            fixed(width: 60, height: 60) {
               ...GatsbyImageSharpFixed_tracedSVG
             }
           }
