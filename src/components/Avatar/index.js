@@ -1,6 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
+
+import * as S from './styles'
 
 const Avatar = () => {
   const { avatarImage } = useStaticQuery(
@@ -18,7 +19,7 @@ const Avatar = () => {
   )
 
   return (
-    <Img
+    <S.AvatarWrapper
       fixed={avatarImage.childImageSharp.fixed}
       fadeIn={true}
       durationFadeIn={'1000'}
