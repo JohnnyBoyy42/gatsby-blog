@@ -10,7 +10,7 @@ const Avatar = () => {
         avatarImage: file(relativePath: { eq: "kratos-profile.jpg" }) {
           childImageSharp {
             fixed(width: 60, height: 60) {
-              ...GatsbyImageSharpFixed_tracedSVG
+              ...GatsbyImageSharpFixed
             }
           }
         }

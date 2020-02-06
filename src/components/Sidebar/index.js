@@ -1,10 +1,13 @@
 import React from 'react'
-import * as S from './styles'
 import Profile from '../Profile'
+import SocialLinks from '../SocialLinks'
+
+import * as S from './styles'
 
 const Sidebar = () => (
   <S.SidebarWrapper>
     <Profile />
+    <SocialLinks />
   </S.SidebarWrapper>
 )
 

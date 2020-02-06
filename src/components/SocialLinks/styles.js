@@ -6,8 +6,8 @@ export const SocialLinksWrapper = styled.nav`
 `
 
 export const SocialLinksList = styled.ul`
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: space-around;
   list-style: none;
 `
