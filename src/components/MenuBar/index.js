@@ -1,21 +1,37 @@
 import React from 'react'
 
+import { Home } from 'styled-icons/boxicons-solid/Home'
+import { SearchAlt2 as Seach } from 'styled-icons/boxicons-regular/SearchAlt2'
+import { UpArrowAlt as Arrow } from 'styled-icons/boxicons-regular/UpArrowAlt'
+import { Bulb as Light } from 'styled-icons/boxicons-regular/Bulb'
+import { Grid } from 'styled-icons/boxicons-solid/Grid'
+
 import * as S from './styles'
 
 const MenuBar = () => (
   <S.MenuBarWrapper>
     <S.MenuBarGroup>
       <S.MenuBarLink to={'/'} title={'Voltar para home'}>
-        <S.MenuBarItem></S.MenuBarItem>
+        <S.MenuBarItem>
+          <Home />
+        </S.MenuBarItem>
       </S.MenuBarLink>
       <S.MenuBarLink to={'/search'} title={'Pesquisar'}>
-        <S.MenuBarItem></S.MenuBarItem>
+        <S.MenuBarItem>
+          <Seach />
+        </S.MenuBarItem>
       </S.MenuBarLink>
     </S.MenuBarGroup>
     <S.MenuBarGroup>
-      <S.MenuBarItem title="Mudar o tema"></S.MenuBarItem>
-      <S.MenuBarItem title="Mudar o visualização"></S.MenuBarItem>
-      <S.MenuBarItem title="Ir para o topo"></S.MenuBarItem>
+      <S.MenuBarItem title="Mudar o tema">
+        <Light />
+      </S.MenuBarItem>
+      <S.MenuBarItem title="Mudar o visualização">
+        <Grid />
+      </S.MenuBarItem>
+      <S.MenuBarItem title="Ir para o topo">
+        <Arrow />
+      </S.MenuBarItem>
     </S.MenuBarGroup>
   </S.MenuBarWrapper>
 )
