@@ -13,7 +13,7 @@ const SocialLinks = () => {
           const Icon = Icons[link.label]
 
           return (
-            <S.SocialLinksItem>
+            <S.SocialLinksItem key={link.label}>
               <S.SocialLinksLink
                 href={link.url}
                 title={link.label}
