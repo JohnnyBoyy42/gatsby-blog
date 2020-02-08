@@ -1,4 +1,4 @@
-import styled from 'styled-components/native'
+import styled from 'styled-components'
 import { Link } from 'gatsby'
 
 export const RecommendedWrapper = styled.section`
