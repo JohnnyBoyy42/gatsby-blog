@@ -12,7 +12,7 @@ export const RecommendedLink = styled(Link)`
   display: flex;
   align-items: center;
   background: #192734;
-  color: #1fa1f2;
+  color: var(--highlight);
   padding: 3rem;
   text-decoration: none;
   transition: background 0.5s;

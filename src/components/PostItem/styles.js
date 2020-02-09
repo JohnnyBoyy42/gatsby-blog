@@ -7,7 +7,7 @@ export const PostItemLink = styled(Link)`
   text-decoration: none;
 
   &:hover {
-    color: #1fa1f2;
+    color: var(--highlight);
   }
 `
 
@@ -23,7 +23,8 @@ export const PostItemTag = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: ${props => (props.background ? props.background : '#1fa1f2')};
+  background: ${props =>
+    props.background ? props.background : 'var(--highlight)'};
   border-radius: 50%;
   color: var(--postColor);
   font-size: 1.3rem;
