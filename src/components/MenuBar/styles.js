@@ -23,7 +23,7 @@ export const MenuBarLink = styled(Link)`
   display: block;
 `
 export const MenuBarItem = styled.span`
-  color: #8899a6;
+  color: var(--texts);
   cursor: pointer;
   display: block;
   height: 1.75rem;
