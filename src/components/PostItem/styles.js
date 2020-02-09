@@ -13,7 +13,7 @@ export const PostItemLink = styled(Link)`
 
 export const PostItemWrapper = styled.section`
   align-items: center;
-  border-bottom: 1px solid #38444d;
+  border-bottom: 1px solid var(--borders);
   display: flex;
   padding: 2rem 3rem 2rem 2.75rem;
   width: 100%;
