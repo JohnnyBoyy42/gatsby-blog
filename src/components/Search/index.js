@@ -2,6 +2,8 @@ import React from 'react'
 import algoliasearch from 'algoliasearch/lite'
 import { InstantSearch, SearchBox, Hits, Stats } from 'react-instantsearch-dom'
 
+import * as S from './styles'
+
 const algolia = {
   appId: process.env.GATSBY_ALGOLIA_APP_ID,
   searchonlyApiKey: process.env.GATSBY_ALGOLIA_SEARCH_KEY,
