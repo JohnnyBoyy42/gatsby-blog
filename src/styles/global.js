@@ -30,7 +30,7 @@ const GlobalStyles = createGlobalStyle`
   }
   body {
     line-height: 1;
-    background: #16202c;
+    background: var(--background);
     font-size: 100%;
     font-family: 'Roboto', sans-serif
   }
