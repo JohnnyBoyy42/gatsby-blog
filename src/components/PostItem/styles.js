@@ -26,7 +26,7 @@ export const PostItemTag = styled.div`
   background: ${props =>
     props.background ? props.background : 'var(--highlight)'};
   border-radius: 50%;
-  color: var(--postColor);
+  color: #fff;
   font-size: 1.3rem;
   font-weight: 700;
   min-height: 90px;
