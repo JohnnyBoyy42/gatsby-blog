@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const PostHeader = styled.header`
-  color: #fff;
+  color: var(--postColor);
   margin: auto;
   max-width: 70rem;
   padding: 5rem 5rem 0;
@@ -36,7 +36,7 @@ export const MainContent = styled.section`
   .tags,
   iframe,
   .button-post {
-    color: #fff;
+    color: var(--postColor);
     font-size: 1.25rem;
     font-weight: 300;
     line-height: 1.7;
@@ -89,7 +89,7 @@ export const MainContent = styled.section`
   }
 
   blockquote {
-    color: #fff;
+    color: var(--postColor);
     border-left: 0.3rem solid #1fa1f2;
     padding: 0 1.875rem;
     margin: 3.125rem auto;
@@ -172,7 +172,7 @@ export const MainContent = styled.section`
     transition: opacity 0.5s;
 
     svg {
-      color: #fff;
+      color: var(--postColor);
     }
 
     &:hover {

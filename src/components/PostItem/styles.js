@@ -25,7 +25,7 @@ export const PostItemTag = styled.div`
   justify-content: center;
   background: ${props => (props.background ? props.background : '#1fa1f2')};
   border-radius: 50%;
-  color: #fff;
+  color: var(--postColor);
   font-size: 1.3rem;
   font-weight: 700;
   min-height: 90px;
