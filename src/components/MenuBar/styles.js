@@ -49,6 +49,12 @@ export const MenuBarItem = styled.span`
   width: 1.75rem;
   transition: color 0.5s;
 
+  &.display {
+    ${media.lessThan('large')`
+      display: none;
+    `}
+  }
+
   &.light {
     color: #d4d400;
 
@@ -64,7 +70,7 @@ export const MenuBarItem = styled.span`
   ${media.lessThan('large')`
     height: 1.5rem;
     padding: .9rem;
-    /* position: relative; */
+    position: relative;
     width: 1.5rem;
   `}
 `
