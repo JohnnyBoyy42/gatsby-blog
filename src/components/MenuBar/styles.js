@@ -23,6 +23,7 @@ export const MenuBarWrapper = styled.aside`
     padding: 0;
     position: fixed;
     width: 100%;
+    z-index: 99;
   `}
 `
 export const MenuBarGroup = styled.div`
