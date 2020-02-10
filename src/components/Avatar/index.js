@@ -9,8 +9,8 @@ const Avatar = () => {
       query {
         avatarImage: file(relativePath: { eq: "kratos-profile.jpg" }) {
           childImageSharp {
-            fixed(width: 60, height: 60) {
-              ...GatsbyImageSharpFixed
+            fluid(maxWidth: 60) {
+              ...GatsbyImageSharpFluid_tracedSVG
             }
           }
         }
@@ -20,9 +20,9 @@ const Avatar = () => {
 
   return (
     <S.AvatarWrapper
-      fixed={avatarImage.childImageSharp.fixed}
+      fluid={avatarImage.childImageSharp.fluid}
       fadeIn={true}
-      durationFadeIn={'1000'}
+      durationFadeIn={'500'}
     />
   )
 }
