@@ -7,3 +7,5 @@ category: misc
 background: '#7AAB13'
 ---
 Primeiro post e panda vermelho
+
+![](assets/img/pandaVermelho.jpg)
